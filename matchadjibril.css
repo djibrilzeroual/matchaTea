@@ -1,0 +1,44 @@
+/* Style général pour la sidebar */
+.sidebar {
+    position: fixed; /* Fixe la sidebar sur le côté gauche de l'écran */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px; /* Largeur de la sidebar */
+    background-color: #333; /* Couleur de fond de la sidebar */
+    color: #fff; /* Couleur du texte */
+    overflow-x: hidden; /* Cache le contenu débordant horizontalement */
+    padding-top: 20px; /* Espace en haut de la sidebar */
+    transition: 0.5s; /* Transition pour les changements de couleur */
+}
+
+/* Style pour les éléments de navigation dans la sidebar */
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* Change la couleur de fond et le texte lors du survol */
+.sidebar a:hover {
+    color: #f1f1f1;
+    background-color: #555;
+}
+
+/* Style pour le bouton de fermeture de la sidebar */
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style pour le contenu de la page lorsqu'il est réduit */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
